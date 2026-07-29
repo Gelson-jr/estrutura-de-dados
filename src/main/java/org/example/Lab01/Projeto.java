@@ -18,6 +18,26 @@ public class Projeto {
 
     public void adicionarFuncionario(Funcionario funcionario){
 
+        if (quantidadefuncionarios < funcionarios.length){
+            funcionarios[quantidadefuncionarios] = funcionario;
+            quantidadefuncionarios++;
+
+            System.out.println(
+                    funcionario.getNome() + "Foi adicionado ao grupo"
+            );
+
+            System.out.println("A equipe está cheia");
+        }
+
+        }
+
+    public void finalizarProjeto() {
+        finalizado = true;
+    }
+
+    public double calcularCustoTotal() {
+
+        return 0;
     }
 
 }
